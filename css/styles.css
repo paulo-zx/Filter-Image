@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --foot-color:aquamarine;
+    --text-color:#1a2428;
+    --bg-color:#fff;
+    --foot: #312b27;
+    --menu: #5a5c6f;
+    --foot1: #20b1d8;   
+    --head: #20dbd9;
+    --Hbutom: #b0edcd;
+    --HbutomA: #a391fa;
+    --IButom: #5c59a8;
+    --IButomA: #282a51;
+}
+
+
+
+/* HEADER*/
+
+header{
+    background:var(--head);
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+    
+
+
+}
+
+.logo{  
+    font-weight: 600;
+    text-align: center; 
+    
+}
+
+.navbar{
+    display: flex;
+    column-gap: 0.5rem;
+    flex-direction: row; 
+    justify-content: center;
+    padding: 12px;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    margin-right: 15px;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 2px;
+    cursor: pointer;
+    background: var(--Hbutom);
+    
+}
+
+.btn:hover{
+    background: var(--HbutomA);
+    transition: 0.2s all linear;
+}
+
+/*  MENU */
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BODY*/
+
+.container{
+    background:#0053b8/10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:35px;
+}
+
+
+
+.btn1{
+    width: 250px;
+   /* border: 2px dashed rgb(130, 87, 230)!important;*/
+    font-size: 19px;
+    font-weight: 700;
+    color: azure;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background:var(--IButom);
+    margin-top: 200px;
+   
+}
+
+.btn1:hover{
+    background: var(--IButomA);
+}
+
+.upload-btn{
+   position: relative;
+   overflow: hidden;
+   position: relative;
+   display: inline-block;
+  /* border: 2px dashed;*/
+   width: 250px;
+   border-radius: 10px;
+   
+   
+}
+
+.upload-btn input[type=file]{
+   font-size: 10px;
+   position:absolute;
+   left: 0;
+   top: 0;
+   opacity: 0;
+   width: 250px;
+   border-radius: 10px;
+   margin-top: 200px;
+   cursor: pointer;
+}
+
+img {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+
+#display_image{
+    display: inline-block;
+    border: 3px solid rgb(130, 87, 230);
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+#display_image1{
+    display: inline-block;
+    border: 3px solid rgb(130, 87, 230);
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+
+
+
+/* FOOTER*/
+
+.copyright{
+    text-align: center;
+    padding: 20px;
+    background: var(--foot1);
+}
+
+.social-paulo .bx{
+    padding: 10px;
+    background:var(--Hbutom);
+    color: var(--HbutomA);
+    border-radius: 5rem;
+    font-size: 20px;
+
+}
+
+.social-paulo .bx:hover{
+    background: var(--HbutomA);
+    color: var(--Hbutom);
+    transition: 0.2s all linear;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:1080px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    .btn1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 210px;
+    }
+
+
+
+    .upload-btn{
+    overflow: visible;
+    margin-left: 210px;
+    }
+
+    .upload-btn input[type=file]{
+    margin-left: 210px;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+
+}
+
+@media (max-width:1050px){
+    .btn1{
+        margin-left: 190px;
+        }
+        .upload-btn{
+        margin-left: 190px;
+        }
+        .upload-btn input[type=file]{
+        margin-left: 190px;
+        }
+}
+
+@media (max-width:980px){
+    .btn1{
+        margin-left: 190px;
+        }
+        .upload-btn{
+        margin-left: 190px;
+        }
+        .upload-btn input[type=file]{
+        margin-left: 190px;
+        }
+}
+
+@media (max-width:900px){
+    .btn1{
+        margin-left: 170px;
+        }
+        .upload-btn{
+        margin-left: 170px;
+        }
+        .upload-btn input[type=file]{
+        margin-left: 170px;
+        }
+}
+
+
+
+
+@media (max-width:852px){
+    header{
+        display: flex;
+        flex-direction: column;
+        background: var(--head);
+    }
+    #menu-icon{
+        display: initial;
+        margin-left: 400px;
+
+    }
+
+    .navbar{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -600px;
+        
+    }
+
+    .btn{
+       
+        flex-direction: column;
+        padding: 1rem;
+        margin: 12px;
+        display: block;
+    }
+
+    
+
+    .btn1{
+        margin-left: 150px;
+        }
+    .upload-btn{
+        margin-left: 150px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 150px;
+    }
+
+    .navbar.active{
+        position: absolute;
+        margin-top: 600px;
+        width: 100%;
+        height: 500px;
+        background-color: cadetblue;
+
+        .btn{
+            
+            width: 200px;
+            text-align: center;
+            justify-content: center;
+            padding-left: 75px;
+            
+        }
+    }
+
+    .upload-btn.active1{
+        .btn1{
+            margin-top: -650px;
+        }
+        .upload-btn{
+            margin-top: -650px;
+        }
+        .upload-btn input[type=file]{
+            margin-top: -650px;
+        }
+    }
+    
+    
+}
+
+@media (max-width:800px){
+    #menu-icon{
+        margin-left: 380px;
+    }
+
+    .btn1{
+        margin-left: 130px;
+        }
+    .upload-btn{
+        margin-left: 130px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 130px;
+    }
+
+
+}
+
+@media (max-width:750px){
+    #menu-icon{
+        margin-left: 360px;
+    }
+
+    .btn1{
+        margin-left: 110px;
+        }
+    .upload-btn{
+        margin-left: 110px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 110px;
+    }
+
+
+}
+
+@media (max-width:730px){
+    #menu-icon{
+        margin-left: 340px;
+    }
+
+    .btn1{
+        margin-left: 110px;
+        }
+    .upload-btn{
+        margin-left: 110px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 110px;
+    }
+
+
+}
+
+@media (max-width:710px){
+    #menu-icon{
+        margin-left: 320px;
+    }
+
+    .btn1{
+        margin-left: 100px;
+        }
+    .upload-btn{
+        margin-left: 100px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 100px;
+    }
+
+
+}
+
+@media (max-width:650px){
+    #menu-icon{
+        margin-left: 290px;
+    }
+
+    .btn1{
+        margin-left: 90px;
+        }
+    .upload-btn{
+        margin-left: 90px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 90px;
+    }
+
+
+}
+
+@media (max-width:600px){
+    #menu-icon{
+        margin-left: 270px;
+    }
+
+    .btn1{
+        margin-left: 80px;
+        }
+    .upload-btn{
+        margin-left: 80px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 80px;
+    }
+
+
+}
+
+@media (max-width:550px){
+    #menu-icon{
+        margin-left: 250px;
+    }
+
+    .btn1{
+        margin-left: 70px;
+        }
+    .upload-btn{
+        margin-left: 70px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 70px;
+    }
+
+
+}
+
+@media (max-width:500px){
+    #menu-icon{
+        margin-left: 230px;
+    }
+
+    .btn1{
+        margin-left: 60px;
+        }
+    .upload-btn{
+        margin-left: 60px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 60px;
+    }
+
+
+}
+
+@media (max-width:450px){
+    #menu-icon{
+        margin-left: 200px;
+    }
+
+    .btn1{
+        margin-left: 50px;
+        }
+    .upload-btn{
+        margin-left: 50px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 50px;
+    }
+
+
+}
+
+@media (max-width:400px){
+    #menu-icon{
+        margin-left: 180px;
+    }
+
+    .btn1{
+        margin-left: 40px;
+        }
+    .upload-btn{
+        margin-left: 40px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 40px;
+    }
+
+
+}
+
+@media (max-width:380px){
+    #menu-icon{
+        margin-left: 160px;
+    }
+
+    .btn1{
+        margin-left: 30px;
+        }
+    .upload-btn{
+        margin-left: 30px;
+        }
+    .upload-btn input[type=file]{
+        margin-left: 30px;
+    }
+
+
+}

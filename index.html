@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Image</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Filters</div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <button class="btn" onclick="contrast()" style="Filter: none;"> Contrast</button>
+            <button class="btn" onclick="bru()" style="Filter: none;"> Blur</button>
+            <button class="btn" onclick="grayscale()" style="Filter: none;"> Black & White</button>
+            <button class="btn" onclick="vintage()" style="Filter: none;"> Vintage</button>
+            <button class="btn" onclick="saturate()" style="Filter: none;"> Saturate</button>
+            <button class="btn" onclick="opacity()" style="Filter: none;"> Opacity</button>
+            <button class="btn" onclick="huerotate()" style="Filter: none;"> Hue-rotate</button>
+           <button class="btn" onclick="sepia()" style="Filter: none;"> Sepia</button>   
+        </ul>
+    </header>
+
+
+    <div class="container">
+        <h1 class="head">IMAGE FILTER</h1>
+
+
+        <div class="content">
+
+            <div class="upload-btn">
+                <button class="btn1">
+                    Selecione a Imagem
+                </button>
+                
+                            <!--  PEGAR IMAGEM NO FORM1  IMAGE
+                            <input type="file" accept="dowloads/*"  id="upfile" onchange="readURL(this);">
+                             -->
+                 <input type="file"   id="image_input" >
+            </div>
+
+                    <div class="original">
+                        <img class="upload_img" id="display_image" alt="">
+                        <div>Original</div>
+                    </div>
+
+                    <div class="filter">                   
+                        <img class="upload_img" id="display_image1" alt="">
+                        <div>Com Filtro</div>
+                    </div>
+                
+        </div>
+    </div>
+
+
+
+
+    <div class="copyright">
+        <p>&#169 Desenvolvido por Paulo Roberto Ribeiro Morais, 2023</p>
+        <div class="social-paulo">
+            <a href="https://github.com/paulo-zx" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/paulo-roberto-127283147/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+
+        <!-- 
+            Só necessario para FORM1  IMAGE , mas neste projeto vou utilizar a FORM2 IMAGE
+
+                JQUERY
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        -->
+
+    
+</body>
+</html>
